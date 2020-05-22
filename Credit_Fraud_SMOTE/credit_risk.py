@@ -7,7 +7,7 @@ y=d.iloc[:,30]
 from sklearn.model_selection import train_test_split
 xtrain,xtest,ytrain,ytest=train_test_split(x,y,test_size=0.25,random_state=0)
 
-#Use StandarScaler
+#Use StandardScaler
 from sklearn.preprocessing import StandardScaler
 s = StandardScaler()
 xtrain=s.fit_transform(xtrain)
